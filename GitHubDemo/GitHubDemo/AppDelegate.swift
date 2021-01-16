@@ -10,8 +10,20 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         MJNetReachabilityManager.shared.startMonitoring()
+        
+        window = UIWindow()
+
+//        let homeVC = HomeViewController()
+//        let nav = UINavigationController(rootViewController: homeVC)
+//        window?.rootViewController = nav
+        let homeVC = HomeViewController()
+        window?.rootViewController = homeVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

@@ -25,6 +25,12 @@
 		0415FEAB25B2BC640045D974 /* MJGitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415FEAA25B2BC640045D974 /* MJGitRouter.swift */; };
 		0415FEB325B2C94A0045D974 /* MJSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415FEB225B2C94A0045D974 /* MJSessionManager.swift */; };
 		0415FEB825B2CB3E0045D974 /* GitNetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415FEB725B2CB3E0045D974 /* GitNetworkLogger.swift */; };
+		0416A62D25B2E94100BC7C02 /* CRReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A62C25B2E94100BC7C02 /* CRReusable.swift */; };
+		0416A63225B2EA4E00BC7C02 /* HomeTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A63125B2EA4E00BC7C02 /* HomeTableCellModel.swift */; };
+		0416A63725B3200400BC7C02 /* HomeViewBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A63625B3200400BC7C02 /* HomeViewBodyCell.swift */; };
+		0416A63C25B33EDA00BC7C02 /* HomeViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A63B25B33EDA00BC7C02 /* HomeViewAPI.swift */; };
+		049F64AD25B2E5F60015B593 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F64AC25B2E5F60015B593 /* HomeViewController.swift */; };
+		049F64B225B2E6210015B593 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F64B125B2E6210015B593 /* HomeViewCell.swift */; };
 		71BC111F82B29C63B090A0E3 /* Pods_GitHubDemo_GitHubDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608EB7642BF98CA2FE432CF4 /* Pods_GitHubDemo_GitHubDemoUITests.framework */; };
 		E5C0BFE52C3EEEA6FF5D50C6 /* Pods_GitHubDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC06C492F879BD8B8DE8DFDE /* Pods_GitHubDemo.framework */; };
 		F805853521EBAE353EB3EA2A /* Pods_GitHubDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8362C47B44E6CD121B3AD4 /* Pods_GitHubDemoTests.framework */; };
@@ -72,6 +78,12 @@
 		0415FEAA25B2BC640045D974 /* MJGitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJGitRouter.swift; sourceTree = "<group>"; };
 		0415FEB225B2C94A0045D974 /* MJSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJSessionManager.swift; sourceTree = "<group>"; };
 		0415FEB725B2CB3E0045D974 /* GitNetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitNetworkLogger.swift; sourceTree = "<group>"; };
+		0416A62C25B2E94100BC7C02 /* CRReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRReusable.swift; sourceTree = "<group>"; };
+		0416A63125B2EA4E00BC7C02 /* HomeTableCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCellModel.swift; sourceTree = "<group>"; };
+		0416A63625B3200400BC7C02 /* HomeViewBodyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBodyCell.swift; sourceTree = "<group>"; };
+		0416A63B25B33EDA00BC7C02 /* HomeViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewAPI.swift; sourceTree = "<group>"; };
+		049F64AC25B2E5F60015B593 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		049F64B125B2E6210015B593 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		0A14BB7CABE87D9A2718E174 /* Pods-GitHubDemo-GitHubDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubDemo-GitHubDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-GitHubDemo-GitHubDemoUITests/Pods-GitHubDemo-GitHubDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		608EB7642BF98CA2FE432CF4 /* Pods_GitHubDemo_GitHubDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubDemo_GitHubDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC1CDE092BD536489E389C1 /* Pods-GitHubDemo-GitHubDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubDemo-GitHubDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-GitHubDemo-GitHubDemoUITests/Pods-GitHubDemo-GitHubDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -240,6 +252,7 @@
 		0415FCEA25ADBA780045D974 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				049F649E25B2E59E0015B593 /* Home */,
 				0415FE6E25B2A0B40045D974 /* Emojis */,
 				0415FE5F25B2A0B40045D974 /* Repositorie */,
 				0415FE6725B2A0B40045D974 /* Users */,
@@ -251,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				0415FE2925B267610045D974 /* CRGlobalFunction.swift */,
+				0416A62C25B2E94100BC7C02 /* CRReusable.swift */,
 			);
 			path = GlobalFunction;
 			sourceTree = "<group>";
@@ -395,6 +409,58 @@
 		0415FE7425B2A0B40045D974 /* Control */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		049F649E25B2E59E0015B593 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				049F649F25B2E59E0015B593 /* ViewModel */,
+				049F64A025B2E59E0015B593 /* Network */,
+				049F64A125B2E59E0015B593 /* Model */,
+				049F64A225B2E59E0015B593 /* View */,
+				049F64A325B2E59E0015B593 /* Control */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		049F649F25B2E59E0015B593 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		049F64A025B2E59E0015B593 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0416A63B25B33EDA00BC7C02 /* HomeViewAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		049F64A125B2E59E0015B593 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0416A63125B2EA4E00BC7C02 /* HomeTableCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		049F64A225B2E59E0015B593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				049F64B125B2E6210015B593 /* HomeViewCell.swift */,
+				0416A63625B3200400BC7C02 /* HomeViewBodyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		049F64A325B2E59E0015B593 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				049F64AC25B2E5F60015B593 /* HomeViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -662,15 +728,21 @@
 			files = (
 				0415FEAB25B2BC640045D974 /* MJGitRouter.swift in Sources */,
 				0415FEB825B2CB3E0045D974 /* GitNetworkLogger.swift in Sources */,
+				049F64B225B2E6210015B593 /* HomeViewCell.swift in Sources */,
+				0416A62D25B2E94100BC7C02 /* CRReusable.swift in Sources */,
 				0415FCA625ADB64E0045D974 /* ViewController.swift in Sources */,
 				0415FE2A25B267610045D974 /* CRGlobalFunction.swift in Sources */,
+				0416A63225B2EA4E00BC7C02 /* HomeTableCellModel.swift in Sources */,
 				0415FEB325B2C94A0045D974 /* MJSessionManager.swift in Sources */,
+				049F64AD25B2E5F60015B593 /* HomeViewController.swift in Sources */,
 				0415FCEF25AE098E0045D974 /* BaseNetwork.swift in Sources */,
 				0415FE8A25B2A31D0045D974 /* RepositoryAPI.swift in Sources */,
+				0416A63C25B33EDA00BC7C02 /* HomeViewAPI.swift in Sources */,
 				0415FD9E25B04E2A0045D974 /* MJNetReachabilityManager.swift in Sources */,
 				0415FE3225B26B9E0045D974 /* UIViewController+Extension.swift in Sources */,
 				0415FCA225ADB64E0045D974 /* AppDelegate.swift in Sources */,
 				0415FE7625B2A0B40045D974 /* RepositoriesViewController.swift in Sources */,
+				0416A63725B3200400BC7C02 /* HomeViewBodyCell.swift in Sources */,
 				0415FCA425ADB64E0045D974 /* SceneDelegate.swift in Sources */,
 				0415FEA225B2AAAB0045D974 /* RepositoryModel.swift in Sources */,
 			);
