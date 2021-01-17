@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0415FCA225ADB64E0045D974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415FCA125ADB64E0045D974 /* AppDelegate.swift */; };
 		0415FCA425ADB64E0045D974 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415FCA325ADB64E0045D974 /* SceneDelegate.swift */; };
-		0415FCA625ADB64E0045D974 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415FCA525ADB64E0045D974 /* ViewController.swift */; };
 		0415FCA925ADB64E0045D974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0415FCA725ADB64E0045D974 /* Main.storyboard */; };
 		0415FCAB25ADB6500045D974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415FCAA25ADB6500045D974 /* Assets.xcassets */; };
 		0415FCAE25ADB6500045D974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0415FCAC25ADB6500045D974 /* LaunchScreen.storyboard */; };
@@ -26,7 +25,7 @@
 		0415FEB325B2C94A0045D974 /* MJSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415FEB225B2C94A0045D974 /* MJSessionManager.swift */; };
 		0415FEB825B2CB3E0045D974 /* GitNetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415FEB725B2CB3E0045D974 /* GitNetworkLogger.swift */; };
 		0416A62D25B2E94100BC7C02 /* CRReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A62C25B2E94100BC7C02 /* CRReusable.swift */; };
-		0416A63225B2EA4E00BC7C02 /* HomeTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A63125B2EA4E00BC7C02 /* HomeTableCellModel.swift */; };
+		0416A63225B2EA4E00BC7C02 /* HomePathItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A63125B2EA4E00BC7C02 /* HomePathItem.swift */; };
 		0416A63725B3200400BC7C02 /* HomeViewBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A63625B3200400BC7C02 /* HomeViewBodyCell.swift */; };
 		0416A63C25B33EDA00BC7C02 /* HomeViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A63B25B33EDA00BC7C02 /* HomeViewAPI.swift */; };
 		049F64AD25B2E5F60015B593 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F64AC25B2E5F60015B593 /* HomeViewController.swift */; };
@@ -57,7 +56,6 @@
 		0415FC9E25ADB64E0045D974 /* GitHubDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0415FCA125ADB64E0045D974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0415FCA325ADB64E0045D974 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0415FCA525ADB64E0045D974 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0415FCA825ADB64E0045D974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0415FCAA25ADB6500045D974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0415FCAD25ADB6500045D974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +77,7 @@
 		0415FEB225B2C94A0045D974 /* MJSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJSessionManager.swift; sourceTree = "<group>"; };
 		0415FEB725B2CB3E0045D974 /* GitNetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitNetworkLogger.swift; sourceTree = "<group>"; };
 		0416A62C25B2E94100BC7C02 /* CRReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRReusable.swift; sourceTree = "<group>"; };
-		0416A63125B2EA4E00BC7C02 /* HomeTableCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCellModel.swift; sourceTree = "<group>"; };
+		0416A63125B2EA4E00BC7C02 /* HomePathItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePathItem.swift; sourceTree = "<group>"; };
 		0416A63625B3200400BC7C02 /* HomeViewBodyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBodyCell.swift; sourceTree = "<group>"; };
 		0416A63B25B33EDA00BC7C02 /* HomeViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewAPI.swift; sourceTree = "<group>"; };
 		049F64AC25B2E5F60015B593 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				0415FCE225ADBA780045D974 /* Class */,
 				0415FCA125ADB64E0045D974 /* AppDelegate.swift */,
 				0415FCA325ADB64E0045D974 /* SceneDelegate.swift */,
-				0415FCA525ADB64E0045D974 /* ViewController.swift */,
 				0415FCA725ADB64E0045D974 /* Main.storyboard */,
 				0415FCAA25ADB6500045D974 /* Assets.xcassets */,
 				0415FCAC25ADB6500045D974 /* LaunchScreen.storyboard */,
@@ -443,7 +440,7 @@
 		049F64A125B2E59E0015B593 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0416A63125B2EA4E00BC7C02 /* HomeTableCellModel.swift */,
+				0416A63125B2EA4E00BC7C02 /* HomePathItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -730,9 +727,8 @@
 				0415FEB825B2CB3E0045D974 /* GitNetworkLogger.swift in Sources */,
 				049F64B225B2E6210015B593 /* HomeViewCell.swift in Sources */,
 				0416A62D25B2E94100BC7C02 /* CRReusable.swift in Sources */,
-				0415FCA625ADB64E0045D974 /* ViewController.swift in Sources */,
 				0415FE2A25B267610045D974 /* CRGlobalFunction.swift in Sources */,
-				0416A63225B2EA4E00BC7C02 /* HomeTableCellModel.swift in Sources */,
+				0416A63225B2EA4E00BC7C02 /* HomePathItem.swift in Sources */,
 				0415FEB325B2C94A0045D974 /* MJSessionManager.swift in Sources */,
 				049F64AD25B2E5F60015B593 /* HomeViewController.swift in Sources */,
 				0415FCEF25AE098E0045D974 /* BaseNetwork.swift in Sources */,

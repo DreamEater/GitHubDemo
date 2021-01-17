@@ -13,16 +13,16 @@ class HomeViewController: UITableViewController {
         case headers, body
     }
     
-    private let _dataArray: Array<HomeTableCellModel> = {
-        var array = Array<HomeTableCellModel>()
-        array.append(HomeTableCellModel.init(path: "\(MJGitRouter.repository_search_url("", "").path)"))
-        array.append(HomeTableCellModel.init(path: "\(MJGitRouter.emojis_url.path)"))
-        array.append(HomeTableCellModel.init(path: "\(MJGitRouter.user_url("").path)"))
+    private let _dataArray: Array<HomePathItem> = {
+        var array = Array<HomePathItem>()
+        array.append(HomePathItem.init(name: "仓库查询" ,path: "\(MJGitRouter.repository_search_url("", "").path)"))
+        array.append(HomePathItem.init(name: "emojis" ,path: "\(MJGitRouter.emojis_url.path)"))
+        array.append(HomePathItem.init(name: "用户名" ,path: "\(MJGitRouter.user_url("").path)"))
         return array
     }()
 
     var body: String?       /// GitHub API请求到的数据
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +31,9 @@ class HomeViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.tableView.estimatedRowHeight = 44
+        self.tableView.rowHeight = UITableView.automaticDimension
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.startRequest()
@@ -42,6 +45,8 @@ class HomeViewController: UITableViewController {
     private func startRequest() {
         HomeViewAPI().requestBaseApi { response in
             print("\(response)")
+            self.body = response
+            self.tableView.reloadData()
         }
     }
 }
@@ -78,7 +83,7 @@ extension HomeViewController {
 
         switch Sections(rawValue: section)! {
         case .headers:
-            return "Headers"
+            return "API"
         case .body:
             return "https://api.github.com 返回值"
         }

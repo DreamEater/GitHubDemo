@@ -7,8 +7,12 @@
 
 import Foundation
 import Alamofire
+import RxSwift
 
 class HomeViewAPI {
+//    var bodyModel = Variable<String?>(nil)
+    
+    open class var shared: HomeViewAPI { return HomeViewAPI() }
     /// 查询仓库列表
     func requestBaseApi(completion: @escaping (String) -> Void) {
         sessionManager.request(GitHubBaseAPI()).responseString { response in

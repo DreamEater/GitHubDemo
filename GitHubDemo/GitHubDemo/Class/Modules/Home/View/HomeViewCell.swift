@@ -19,15 +19,8 @@ class HomeViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    
-    /// 赋值
-    func set(model: HomeTableCellModel) {
-        //self.textLabel?.text = model.url_name
-        self.detailTextLabel?.text = model.url_path
-    }
-    
     /// 初始化
-    public static func cell(tableView: UITableView, model: HomeTableCellModel) -> HomeViewCell {
+    public static func cell(tableView: UITableView, model: HomePathItem) -> HomeViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cr_identifier) ??
             HomeViewCell(style: UITableViewCell.CellStyle.value1, reuseIdentifier: self.cr_identifier)
         let realCell = cell as! HomeViewCell

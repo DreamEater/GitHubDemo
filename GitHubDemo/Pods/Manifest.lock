@@ -12,6 +12,7 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
   - Toast-Swift (5.0.1)
 
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - PromiseKit/CorePromise (~> 6.13.0)
   - RxCocoa
   - RxSwift
+  - SnapKit
   - SwiftyJSON
   - Toast-Swift (~> 5.0.1)
 
@@ -32,6 +34,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SnapKit
     - SwiftyJSON
     - Toast-Swift
 
@@ -42,9 +45,10 @@ SPEC CHECKSUMS:
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 436e7af3b651fecfbb70cecd40f702eb676b827e
+PODFILE CHECKSUM: 2408633f0ce002bab72db553114c55b44e9c0cdc
 
 COCOAPODS: 1.10.0.rc.1
